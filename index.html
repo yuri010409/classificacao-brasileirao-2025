@@ -5,190 +5,312 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela Brasileirão 2025</title>
     <style>
+        :root{
+            --cor-fraca: rgb(218, 218, 218);
+        }
+        
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: #101218;
+        }
+
+        main{
+            margin: auto;
+        }
+
+        p{
+            background-color: #303134;
+            color: var(--cor-fraca);
+            padding: 15px;
+            font-family: arial;
+            margin: 0px;
+            padding: 10px;
+            line-height: 1.4em;
+        }
+        strong{
+            color: white;
+        }
         table{
             width: 100vh;
             border-collapse: collapse;
         }
         th, td{
-            border: solid 1px lightgray;
+            border-bottom: solid 1px lightgray;
+            padding: 14px 13px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: var(--cor-fraca);
+        }
+        th{
+            font-weight: normal;
+        }
+        
+
+        .clubes{
+            text-align: left;  
+        }
+
+        .pts{
+            font-weight: bolder;
+            color: white;
+        }
+        div.libertadores{
+            border-left: 2px #4285F4 solid;
         }
     </style>
 </head>
 <body>
-    <p>Temporada<br> 2025</p>
-    <table>
-        <thead>
-            <tr>
-                <th style="text-align: left;">Clube</th>
-                <th>Pts</th>
-                <th>PJ</th>
-                <th>VIT</th>
-                <th>E</th>
-                <th>DER</th>
-                <th>GM</th>
-                <th>GC</th>
-                <th>SG</th>
-            </tr>
-            <tr>
-                <td>1 Palmeiras</td>
-                <td>13</td>
-                <td>5</td>
-                <td>4</td>
-                <td>1</td>
-                <td>0</td>
-                <td>7</td>
-                <td>2</td>
-                <td>5</td>
-            </tr>
-            <tr>
-                <td>2 Flamengo</td>
-                <td>11</td>
-                <td>5</td>
-                <td>3</td>
-                <td>2</td>
-                <td>0</td>
-                <td>11</td>
-                <td>2</td>
-                <td>9</td>
-            </tr>
-            <tr>
-                <td>2 Flamengo</td>
-                <td>11</td>
-                <td>5</td>
-                <td>3</td>
-                <td>2</td>
-                <td>0</td>
-                <td>11</td>
-                <td>2</td>
-                <td>9</td>
-            </tr>
-            <tr>
-                <td>3 Fluminense</td>
-                <td>10</td>
-                <td>5</td>
-                <td>3</td>
-                <td>1</td>
-                <td>1</td>
-                <td>6</td>
-                <td>4</td>
-                <td>2</td>
-            </tr>
-            <tr>
-                <td>4 Bragantino</td>
-                <td>10</td>
-                <td>5</td>
-                <td>3</td>
-                <td>1</td>
-                <td>1</td>
-                <td>6</td>
-                <td>4</td>
-                <td>2</td>
-            </tr>
-            <tr>
-                <td>5 Ceará SC</td>
-                <td>7</td>
-                <td>5</td>
-                <td>2</td>
-                <td>1</td>
-                <td>2</td>
-                <td>7</td>
-                <td>6</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>6 Corinthians</td>
-                <td>7</td>
-                <td>5</td>
-                <td>2</td>
-                <td>1</td>
-                <td>2</td>
-                <td>6</td>
-                <td>6</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>7 Cruzeiro</td>
-                <td>7</td>
-                <td>5</td>
-                <td>2</td>
-                <td>1</td>
-                <td>2</td>
-                <td>6</td>
-                <td>6</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>8 Vasco da Gama</td>
-                <td>7</td>
-                <td>5</td>
-                <td>2</td>
-                <td>1</td>
-                <td>2</td>
-                <td>6</td>
-                <td>7</td>
-                <td>-1</td>
-            </tr>
-            
-            <tr>
-                <td>9 Juventude</td>
-                <td>7</td>
-                <td>5</td>
-                <td>2</td>
-                <td>1</td>
-                <td>2</td>
-                <td>6</td>
-                <td>11</td>
-                <td>-5</td>
-            </tr>
-            <tr>
-                <td>10 São Paulo</td>
-                <td>7</td>
-                <td>5</td>
-                <td>1</td>
-                <td>4</td>
-                <td>0</td>
-                <td>5</td>
-                <td>4</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>11 Mirassol</td>
-                <td>6</td>
-                <td>5</td>
-                <td>1</td>
-                <td>3</td>
-                <td>1</td>
-                <td>9</td>
-                <td>7</td>
-                <td>2</td>
-            </tr>
-            <tr>
-                <td>12 Internacional</td>
-                <td>7</td>
-                <td>5</td>
-                <td>2</td>
-                <td>1</td>
-                <td>2</td>
-                <td>6</td>
-                <td>7</td>
-                <td>-1</td>
-            </tr>
-            <tr>
-                <td>9 Vasco da Gama</td>
-                <td>7</td>
-                <td>5</td>
-                <td>2</td>
-                <td>1</td>
-                <td>2</td>
-                <td>6</td>
-                <td>7</td>
-                <td>-1</td>
-            </tr>
-
-            
-
-
-        </thead>
-    </table>
+    <main>
+        <p>Temporada <br><strong>2025</strong></p>
+        
+        <table>
+        
+            <thead>
+                <tr>
+                    <th scope="col" class="clubes">Clubes</th>
+                    <th scope="col" class="pts">Pts</th>
+                    <th scope="col">PJ</th>
+                    <th scope="col">VIT</th>
+                    <th scope="col">E</th>
+                    <th scope="col" style="padding: 0px;">DER</th>
+                    <th scope="col">GM</th>
+                    <th scope="col">GC</th>
+                    <th scope="col">SG</th>
+                </tr>
+            </thead>
+                <tbody>
+                    <div class="libertadores">
+                        <tr>
+                            <td class="clubes">1 Palmeiras</td>
+                            <td class="pts">13</td>
+                            <td>5</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>7</td>
+                            <td>2</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td class="clubes">2 Flamengo</td>
+                            <td class="pts">11</td>
+                            <td>5</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>11</td>
+                            <td>2</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td class="clubes">3 Fluminense</td>
+                            <td class="pts">10</td>
+                            <td>5</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>6</td>
+                            <td>4</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td class="clubes">4 Bragantino</td>
+                            <td class="pts">10</td>
+                            <td>5</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>6</td>
+                            <td>4</td>
+                            <td>2</td>
+                        </tr>
+                    </div>
+                    <div class="qualificatorias-liberta">
+                        <tr>
+                            <td class="clubes">5 Ceará SC</td>
+                            <td class="pts">7</td>
+                            <td>5</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>7</td>
+                            <td>6</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td class="clubes">6 Corinthians</td>
+                            <td class="pts">7</td>
+                            <td>5</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>6</td>
+                            <td>6</td>
+                            <td>1</td>
+                        </tr>
+                    </div>
+                    <div class="sudamericana">
+                        <tr>
+                            <td class="clubes">7 Cruzeiro</td>
+                            <td class="pts">7</td>
+                            <td>5</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>6</td>
+                            <td>6</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td class="clubes">8 Vasco da Gama</td>
+                            <td class="pts">7</td>
+                            <td>5</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>-1</td>
+                        </tr>
+        
+                        <tr>
+                            <td class="clubes">9 Juventude</td>
+                            <td class="pts">7</td>
+                            <td>5</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>6</td>
+                            <td>11</td>
+                            <td>-5</td>
+                        </tr>
+                        <tr>
+                            <td class="clubes">10 São Paulo</td>
+                            <td class="pts">7</td>
+                            <td>5</td>
+                            <td>1</td>
+                            <td>4</td>
+                            <td>0</td>
+                            <td>5</td>
+                            <td>4</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td class="clubes">11 Mirassol</td>
+                            <td class="pts">6</td>
+                            <td>5</td>
+                            <td>1</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>9</td>
+                            <td>7</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td class="clubes">12 Internacional</td>
+                            <td class="pts">6</td>
+                            <td>5</td>
+                            <td>1</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>5</td>
+                            <td>3</td>
+                            <td>2</td>
+                        </tr>
+                    </div>
+                    <tr>
+                        <td class="clubes">13 Bahia</td>
+                        <td class="pts">6</td>
+                        <td>5</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>5</td>
+                        <td>7</td>
+                        <td>-2</td>
+                    </tr>
+                    <tr>
+                        <td class="clubes">14 Fortaleza</td>
+                        <td class="pts">5</td>
+                        <td>5</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td class="clubes">15 Botafogo</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td class="clubes">16 EC Vitória</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>6</td>
+                        <td>8</td>
+                        <td>-2</td>
+                    </tr>
+                    <div class="rebaixamento">
+                        <tr>
+                            <td class="clubes">17 Atletico MG</td>
+                            <td class="pts">5</td>
+                            <td>5</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>4</td>
+                            <td>6</td>
+                            <td>-2</td>
+                        </tr>
+                        <tr>
+                            <td class="clubes">18 Santos</td>
+                            <td class="pts">4</td>
+                            <td>5</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>3</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>-1</td>
+                        </tr>
+                        <tr>
+                            <td class="clubes">19 Grêmio</td>
+                            <td class="pts">4</td>
+                            <td>5</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>10</td>
+                            <td>-6</td>
+                        </tr>
+                        <tr>
+                            <td class="clubes">Sport Recife</td>
+                            <td class="pts">1</td>
+                            <td>5</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>8</td>
+                            <td>-5</td>
+                        </tr>
+                    </div>
+                </tbody>
+        </table>
+    </main>
 </body>
 </html>
