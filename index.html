@@ -9,32 +9,38 @@
             --cor-fraca: rgb(218, 218, 218);
         }
         
-        body{
+        *{
             margin: 0px;
             padding: 0px;
+        }
+
+        body{
+            background-color: #ffffff;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 800px;
+            margin: auto;
             background-color: #101218;
         }
 
-        main{
-            margin: auto;
-        }
-
-        p{
+        caption{
             background-color: #303134;
             color: var(--cor-fraca);
             padding: 15px;
             font-family: arial;
-            margin: 0px;
+            text-align: left;
             padding: 10px;
             line-height: 1.4em;
         }
+
         strong{
             color: white;
         }
-        table{
-            width: 100vh;
-            border-collapse: collapse;
-        }
+
+       
+
         th, td{
             border-bottom: solid 1px lightgray;
             padding: 14px 13px;
@@ -48,7 +54,8 @@
         
 
         .clubes{
-            text-align: left;  
+            text-align: left; 
+            width: 157px; 
         }
 
         .pts{
@@ -62,13 +69,11 @@
 </head>
 <body>
     <main>
-        <p>Temporada <br><strong>2025</strong></p>
-        
         <table>
-        
+            <caption>Temporada <br><strong>2025</strong></caption>
             <thead>
                 <tr>
-                    <th scope="col" class="clubes">Clubes</th>
+                    <th scope="col" class="clubes" style="font-size: 0.9em;">Clubes</th>
                     <th scope="col" class="pts">Pts</th>
                     <th scope="col">PJ</th>
                     <th scope="col">VIT</th>
