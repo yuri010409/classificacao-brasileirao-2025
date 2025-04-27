@@ -7,18 +7,21 @@
     <style>
         :root{
             --cor-de-fundo: #101218;
-            --cor-fraca: rgb(218, 218, 218);
+            --cor-fraca: rgb(212, 212, 212);
             --cor-temporada: #303134;
-        }
-
-        *{
-            margin: 0px;
-            padding: 0px;
         }
 
         body{
             font-family: Arial, Helvetica, sans-serif;
             background-color: var(--cor-de-fundo);
+        }
+
+        main{
+            padding: 10px;
+            overflow: scroll;
+        }
+        h1{
+            padding: 20px 0px 20px;
         }
 
 
@@ -28,6 +31,7 @@
             margin: auto;
             overflow: auto;
             background-color: var(--cor-de-fundo);
+           
           
         }
 
@@ -47,21 +51,10 @@
             border-bottom: 1px solid var(--cor-fraca);
             padding: 10px;
             width: 20px;
-            overflow: hidden;
             text-align: center;
             color: var(--cor-fraca);
         }
-        td::before{
-            position: relative;
-        }
-
-        thead th:first-child, tbody td:first-child{
-            position: sticky;
-            background-color: #101218;
-            left: 0;
-            z-index: 1;
-        }
-
+    
         .clubes{
             text-align: left;          
         }
