@@ -8,47 +8,33 @@
         :root{
             --cor-de-fundo: #101218;
             --cor-fraca: rgb(218, 218, 218);
+            --cor-temporada: #303134;
         }
 
-        
-        
         *{
             margin: 0px;
             padding: 0px;
         }
 
         body{
+            font-family: Arial, Helvetica, sans-serif;
             background-color: var(--cor-de-fundo);
         }
 
-        main{
-            width: 800px;
-            padding-left: 10px;
-            padding-right: 10px;
-            margin: 100px 50px 100px 50px;
-            
-        }
 
         table{
             border-collapse: collapse;
-            width: 900px;
-            margin-top: 100px;
+            width: 938px;
             margin: auto;
-            background-color: #101218;
-        }
-        @media (min-width: 320px) {
-            table{
-                min-width: 320px;
-            }
-            
+            overflow: auto;
+            background-color: var(--cor-de-fundo);
+          
         }
 
         caption{
-            background-color: #303134;
-            color: var(--cor-fraca);
-            padding: 15px;
-            font-family: arial;
             text-align: left;
+            background-color: var(--cor-temporada);
+            color: var(--cor-fraca);
             padding: 10px;
             line-height: 1.4em;
         }
@@ -57,39 +43,45 @@
             color: white;
         }
 
-       
-
-        th, td{
-            border-bottom: solid 1px lightgray;
-            padding: 14px 13px;
-            font-family: Arial, Helvetica, sans-serif;
+        th,td{
+            border-bottom: 1px solid var(--cor-fraca);
+            padding: 10px;
+            width: 20px;
+            overflow: hidden;
             text-align: center;
             color: var(--cor-fraca);
-           
         }
-        th{
-            font-weight: normal;
+        td::before{
+            position: relative;
         }
-        
+
+        thead th:first-child, tbody td:first-child{
+            position: sticky;
+            background-color: #101218;
+            left: 0;
+            z-index: 1;
+        }
 
         .clubes{
-            text-align: left; 
-            width: 157px;
-            border-left: 3px solid #4285F4; 
+            text-align: left;          
         }
 
         .pts{
-            font-weight: bolder;
             color: white;
+            font-weight: bolder;
         }
-        div.libertadores{
-            border-left: 2px #4285F4 solid;
+        #Atletico {
+            position: relative;
         }
+
+        
+
 
     </style>
 </head>
 <body>
     <main>
+        <h1 style="color: white;">Brasileirão Serie A</h1>
         <table>
             <caption>Temporada <br><strong>2025</strong></caption>
             <thead>
@@ -108,7 +100,7 @@
                 <tbody>
                     <div class="libertadores">
                         <tr>
-                            <td class="clubes">1 Palmeiras</td>
+                            <td class="clubes" id="palmeiras">1 Palmeiras</td>
                             <td class="pts">13</td>
                             <td>5</td>
                             <td>4</td>
@@ -119,7 +111,7 @@
                             <td>5</td>
                         </tr>
                         <tr>
-                            <td class="clubes">2 Flamengo</td>
+                            <td class="clubes" id="Flamengo">2 Flamengo</td>
                             <td class="pts">11</td>
                             <td>5</td>
                             <td>3</td>
@@ -130,7 +122,7 @@
                             <td>9</td>
                         </tr>
                         <tr>
-                            <td class="clubes">3 Fluminense</td>
+                            <td class="clubes" id="fluminense">3 Fluminense</td>
                             <td class="pts">10</td>
                             <td>5</td>
                             <td>3</td>
@@ -141,7 +133,7 @@
                             <td>2</td>
                         </tr>
                         <tr>
-                            <td class="clubes">4 Bragantino</td>
+                            <td class="clubes" id="Bragantino">4 Bragantino</td>
                             <td class="pts">10</td>
                             <td>5</td>
                             <td>3</td>
@@ -154,7 +146,7 @@
                     </div>
                     <div class="qualificatorias-liberta">
                         <tr>
-                            <td class="clubes">5 Ceará SC</td>
+                            <td class="clubes" id="Ceará">5 Ceará SC</td>
                             <td class="pts">7</td>
                             <td>5</td>
                             <td>2</td>
@@ -165,7 +157,7 @@
                             <td>1</td>
                         </tr>
                         <tr>
-                            <td class="clubes">6 Corinthians</td>
+                            <td class="clubes" id="Corinthians">6 Corinthians</td>
                             <td class="pts">7</td>
                             <td>5</td>
                             <td>2</td>
@@ -178,7 +170,7 @@
                     </div>
                     <div class="sudamericana">
                         <tr>
-                            <td class="clubes">7 Cruzeiro</td>
+                            <td class="clubes" id="Cruzeiro">7 Cruzeiro</td>
                             <td class="pts">7</td>
                             <td>5</td>
                             <td>2</td>
@@ -189,7 +181,7 @@
                             <td>0</td>
                         </tr>
                         <tr>
-                            <td class="clubes">8 Vasco da Gama</td>
+                            <td class="clubes" id="Vasco">8 Vasco da Gama</td>
                             <td class="pts">7</td>
                             <td>5</td>
                             <td>2</td>
@@ -201,7 +193,7 @@
                         </tr>
         
                         <tr>
-                            <td class="clubes">9 Juventude</td>
+                            <td class="clubes" id="Juventude">9 Juventude</td>
                             <td class="pts">7</td>
                             <td>5</td>
                             <td>2</td>
@@ -212,7 +204,7 @@
                             <td>-5</td>
                         </tr>
                         <tr>
-                            <td class="clubes">10 São Paulo</td>
+                            <td class="clubes" id="sao-paulo">10 São Paulo</td>
                             <td class="pts">7</td>
                             <td>5</td>
                             <td>1</td>
@@ -223,7 +215,7 @@
                             <td>1</td>
                         </tr>
                         <tr>
-                            <td class="clubes">11 Mirassol</td>
+                            <td class="clubes" id="Mirassol">11 Mirassol</td>
                             <td class="pts">6</td>
                             <td>5</td>
                             <td>1</td>
@@ -234,7 +226,7 @@
                             <td>2</td>
                         </tr>
                         <tr>
-                            <td class="clubes">12 Internacional</td>
+                            <td class="clubes" id="Internacional">12 Internacional</td>
                             <td class="pts">6</td>
                             <td>5</td>
                             <td>1</td>
@@ -246,7 +238,7 @@
                         </tr>
                     </div>
                     <tr>
-                        <td class="clubes">13 Bahia</td>
+                        <td class="clubes" id="Bahia">13 Bahia</td>
                         <td class="pts">6</td>
                         <td>5</td>
                         <td>1</td>
@@ -257,7 +249,7 @@
                         <td>-2</td>
                     </tr>
                     <tr>
-                        <td class="clubes">14 Fortaleza</td>
+                        <td class="clubes" id="Fortaleza">14 Fortaleza</td>
                         <td class="pts">5</td>
                         <td>5</td>
                         <td>1</td>
@@ -268,7 +260,7 @@
                         <td>0</td>
                     </tr>
                     <tr>
-                        <td class="clubes">15 Botafogo</td>
+                        <td class="clubes" id="Botafogo">15 Botafogo</td>
                         <td>5</td>
                         <td>5</td>
                         <td>1</td>
@@ -279,7 +271,7 @@
                         <td>0</td>
                     </tr>
                     <tr>
-                        <td class="clubes">16 EC Vitória</td>
+                        <td class="clubes" id="ec-vitoria">16 EC Vitória</td>
                         <td>5</td>
                         <td>5</td>
                         <td>1</td>
@@ -291,7 +283,7 @@
                     </tr>
                     <div class="rebaixamento">
                         <tr>
-                            <td class="clubes">17 Atletico MG</td>
+                            <td id="Atletico" class="clubes" >17 <img src="times/atletico.png" alt="Escudo Atletico-MG" width="26px" height="36px"  style="vertical-align: middle;margin: 0 7px 2px 7px;"> Atletico MG</td>
                             <td class="pts">5</td>
                             <td>5</td>
                             <td>1</td>
@@ -302,7 +294,7 @@
                             <td>-2</td>
                         </tr>
                         <tr>
-                            <td class="clubes">18 Santos</td>
+                            <td class="clubes" id="Santos">18 Santos</td>
                             <td class="pts">4</td>
                             <td>5</td>
                             <td>1</td>
@@ -313,7 +305,7 @@
                             <td>-1</td>
                         </tr>
                         <tr>
-                            <td class="clubes">19 Grêmio</td>
+                            <td class="clubes" id="gremio">19 Grêmio</td>
                             <td class="pts">4</td>
                             <td>5</td>
                             <td>1</td>
@@ -324,7 +316,7 @@
                             <td>-6</td>
                         </tr>
                         <tr>
-                            <td class="clubes">Sport Recife</td>
+                            <td class="clubes" id="sport">Sport Recife</td>
                             <td class="pts">1</td>
                             <td>5</td>
                             <td>0</td>
