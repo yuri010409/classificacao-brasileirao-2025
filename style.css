@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+:root{
+            --cor-de-fundo: #101218;
+            --cor-fraca: rgb(212, 212, 212);
+            --cor-temporada: #303134;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: var(--cor-de-fundo);
+            margin: auto;
+        }
+
+        h1{
+            padding: 20px 0px;
+        }
+
+        .table-container{
+            overflow: auto;
+            max-width: 100%;
+            margin: auto;
+            height: 724px;
+        }
+        table{
+            border-collapse: collapse;
+            min-width: 800px;
+            width: 100%;           
+            background-color: var(--cor-de-fundo);
+          
+           
+          
+        }
+
+        caption{
+            text-align: left;
+            background-color: var(--cor-temporada);
+            color: var(--cor-fraca);
+            padding: 10px;
+            line-height: 1.4em;
+        }
+
+        strong{
+            color: white;
+        }
+
+        th,td{
+            border-bottom: 1px solid var(--cor-fraca);
+            padding: 10px;
+            width: 20px;
+            text-align: center;
+            color: var(--cor-fraca);
+        }
+    
+        .clubes{
+            text-align: left;          
+        }
+
+        .pts{
+            color: white;
+            font-weight: bolder;
+        }
+        #Atletico {
+            position: relative;
+        }
+
+        img{
+            width: 26px;
+            padding: 0px 0px 3px;
+            vertical-align: middle;
+        }
